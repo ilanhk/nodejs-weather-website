@@ -1,0 +1,59 @@
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px; /* prevent things from being squished when you narrow the browser too much */
+
+    display: flex; /* this enables flexbox  */
+    flex-direction: column; /* makes everything go from top to bottom */
+    min-height: 100vh; /* this is the browser's height  */
+}
+
+.main-content{
+    flex-grow: 1; /* this tells flexbox to take all leftover space  */
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+
+}
+
+header a {
+    /* targets all links in a header tag */
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none; /* this removes the link underline  */
+}
+
+.portrait {
+    width: 250px;
+}
+
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer; /* this allows the button to look clickable when I hover over the button */
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+

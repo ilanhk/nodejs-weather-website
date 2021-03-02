@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+    {{!-- handle bars file is html with interesting features --}}
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/images/weather.png">{{!-- this is so i can have an icon on the tag --}}
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get the weather forcast of any city/town/zip code</p>
+
+        <form action="">
+            <input type="text" placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+    </div>    
+    
+
+
+
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script> {{!-- sometimes its good to connect to js last when all elements are available first--}}
+</body>
+
+
+</html>
