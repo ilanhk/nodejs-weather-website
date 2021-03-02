@@ -1,17 +1,3 @@
-console.log('client side js file is loaded')
-
-// fetch('http://localhost:3000/weather?search=Boston').then((response) =>{
-//     response.json().then((data) =>{
-//         if (data.error) {
-//             console.log(data.error)
-//         } else {
-//             console.log(data.location)
-//             console.log(data.forecast)
-//         }
-//     })
-// })//this fetches data from a url and then runs this callback fucntion
-
-
 const weatherForm = document.querySelector('form')
 const search_text = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
