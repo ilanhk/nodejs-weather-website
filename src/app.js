@@ -7,6 +7,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
+const port = process.env.PORT || 3000 //'process.env.PORT' is for heroku ports. '|| 3000' allows us to still run the app on port 3000
 
 //Defined Paths for express configuration
 const publicDirectoryPath = path.join(__dirname, '../public') //provides the path to the public folder which has the html files. Use '..' to move out of that directory like 'cd ..'
@@ -97,6 +98,13 @@ app.get('*', (req, res) => {
 //to start/run the server you need to use this method:
 //it listens on a port argument and a callback function
 // use nodemon to run the server so you can make changes better
-app.listen(3000, () =>{
-    console.log('Server is up on port 3000')
+
+//allows the app to run on port 3000
+// app.listen(3000, () =>{
+//     console.log('Server is up on port 3000')
+// }) 
+
+//for heroku and to still run on port 3000
+app.listen(port, () =>{
+    console.log('Server is up on port ' + port)
 }) 
